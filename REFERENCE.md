@@ -144,12 +144,12 @@ Chinese:
 ### 4.3 How to Use
 
 1. **Identify the domain** (second blank): What is the broad field your paper
-   addresses? (e.g., "power system optimization", "reinforcement learning",
-   "multi-energy systems")
+   addresses? (e.g., "cancer diagnostics", "reinforcement learning",
+   "coral reef ecology")
 
 2. **Identify the key concept** (first blank): What single idea or perspective
-   makes everything in your paper coherent? (e.g., "heterogeneous graph
-   structure", "multi-agent coordination", "carbon-aware scheduling")
+   makes everything in your paper coherent? (e.g., "multi-analyte
+   biomarkers", "synaptic homeostasis", "carbon-aware scheduling")
 
 3. **Test the anchor**: Read the filled template. Does it accurately capture
    the paper's unique contribution? If the template could apply to many
@@ -169,17 +169,17 @@ Chinese:
 
 ### 4.5 Example
 
-For a paper on heterogeneous graph reinforcement learning for multi-energy
-systems:
+For a paper on early cancer detection using liquid biopsy:
 
 ```
-"Nothing in multi-energy system optimization makes sense except in the
-light of heterogeneous graph structure."
+"Nothing in early cancer detection makes sense except in the light of
+multi-analyte blood biomarkers."
 ```
 
-This anchor tells the reader: the paper's unique contribution is applying
-heterogeneous graph structure to energy system optimization, and without
-this perspective, the field's problems remain intractable.
+This anchor tells the reader: the paper's unique contribution is combining
+multiple blood-based biomarkers for early detection, and without this
+integrated perspective, current single-marker assays remain insufficiently
+sensitive.
 
 ---
 
@@ -249,9 +249,10 @@ Olson defines three versions of ABT for different audiences:
 - **Length**: One short sentence
 - **Audience**: General public, non-specialists
 - **Use case**: Elevator pitch, public talk, press release
-- **Example**: "Energy systems are getting more complex AND we need better
-  optimization, BUT current methods can't handle heterogeneous components,
-  THEREFORE we developed a new graph-based approach."
+- **Example**: "Coral reefs are under unprecedented stress AND marine
+  protected areas have expanded, BUT static protection fails as warming
+  shifts species ranges, THEREFORE we are designing climate-adaptive
+  reserves."
 
 #### kABT (Keeper ABT)
 - **Length**: 2-4 sentences
@@ -259,13 +260,13 @@ Olson defines three versions of ABT for different audiences:
 - **Use case**: Conference abstract, paper abstract, grant summary
 - **Balance**: Concise enough to deliver orally, detailed enough to convey
   substance
-- **Example**: "In my lab, we study multi-energy system optimization using
-  reinforcement learning. We initially focused on homogeneous agent
-  coordination, AND we achieved good results on standard benchmarks. BUT we
-  realized that real-world energy systems have heterogeneous components that
-  homogeneous models cannot capture. THEREFORE, we developed a heterogeneous
-  graph reinforcement learning framework that explicitly models component
-  diversity."
+- **Example**: "In my lab, we study memory consolidation during sleep using
+  EEG and behavioral measures. We initially focused on slow-wave activity,
+  AND its link to overnight memory gains is well replicated. BUT we
+  realized that slow-wave metrics alone cannot distinguish between generic
+  strengthening and targeted reactivation of specific memories. THEREFORE,
+  we developed a reactivation-based experimental protocol that isolates
+  targeted memory effects."
 
 #### iABT (In-depth ABT)
 - **Length**: Full paragraph or more

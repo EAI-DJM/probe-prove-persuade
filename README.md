@@ -196,15 +196,15 @@ Even without an AI agent, these files constitute a complete manual of narrative-
 
 ### Before polishing (AAA — flat statement)
 
-> We study multi-energy systems. We model electricity, heat, and gas networks. We use reinforcement learning. We train agents with PPO. We evaluate on benchmark datasets. We compare with baseline methods. We achieve 15% cost reduction. We conclude that our method is effective.
+> We study liquid biopsy for cancer detection. We collect blood samples from 500 patients. We extract circulating tumor DNA. We train a machine learning classifier. We achieve 92% sensitivity. We conclude that our method is effective.
 
 **Diagnosis**: severe AAA. No research gap, no tension, no "But". Readers cannot tell why this work matters.
 
 ### After polishing (ABT — tension and resolution)
 
-> Multi-energy systems integrate electricity, heat, and gas networks, **AND** reinforcement learning has shown promise for their coordinated optimization. **BUT** existing approaches assume homogeneous agent capabilities, failing to capture the structural heterogeneity of real-world energy components. **THEREFORE**, we propose a heterogeneous graph reinforcement learning framework that explicitly models component diversity, achieving 15% cost reduction over state-of-the-art baselines.
+> Early detection of cancer dramatically improves survival, **AND** liquid biopsy based on circulating tumor DNA (ctDNA) has emerged as a non-invasive screening modality. **BUT** current ctDNA assays show limited sensitivity for early-stage tumors, where the fraction of tumor-derived DNA in blood is extremely low. **THEREFORE**, we propose a multi-analyte liquid biopsy framework that integrates ctDNA methylation with protein biomarkers, achieving 92% sensitivity for stage I tumors.
 
-> More examples: see [EXAMPLES.md](EXAMPLES.md).
+> More examples from biomedicine, materials, ecology, neuroscience, public health, psychology, astrophysics, and economics: see [EXAMPLES.md](EXAMPLES.md).
 
 ---
 

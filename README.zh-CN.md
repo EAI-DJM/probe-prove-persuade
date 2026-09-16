@@ -205,15 +205,15 @@ User: 用杜布赞斯基模板锚定论文主题
 
 ### 润色前（AAA — 平铺直叙）
 
-> We study multi-energy systems. We model electricity, heat, and gas networks. We use reinforcement learning. We train agents with PPO. We evaluate on benchmark datasets. We compare with baseline methods. We achieve 15% cost reduction. We conclude that our method is effective.
+> We study liquid biopsy for cancer detection. We collect blood samples from 500 patients. We extract circulating tumor DNA. We train a machine learning classifier. We achieve 92% sensitivity. We conclude that our method is effective.
 
 **诊断**：AAA 重度。无研究空白，无张力，无"But"。读者无法判断这项工作为什么重要。
 
 ### 润色后（ABT — 有张有合）
 
-> Multi-energy systems integrate electricity, heat, and gas networks, **AND** reinforcement learning has shown promise for their coordinated optimization. **BUT** existing approaches assume homogeneous agent capabilities, failing to capture the structural heterogeneity of real-world energy components. **THEREFORE**, we propose a heterogeneous graph reinforcement learning framework that explicitly models component diversity, achieving 15% cost reduction over state-of-the-art baselines.
+> Early detection of cancer dramatically improves survival, **AND** liquid biopsy based on circulating tumor DNA (ctDNA) has emerged as a non-invasive screening modality. **BUT** current ctDNA assays show limited sensitivity for early-stage tumors, where the fraction of tumor-derived DNA in blood is extremely low. **THEREFORE**, we propose a multi-analyte liquid biopsy framework that integrates ctDNA methylation with protein biomarkers, achieving 92% sensitivity for stage I tumors.
 
-> 更多示例见 [EXAMPLES.md](EXAMPLES.md)。
+> 覆盖生物医学、材料、生态、神经工程、公卫、心理学、天体物理、经济学等多学科的更多示例见 [EXAMPLES.md](EXAMPLES.md)。
 
 ---
 
