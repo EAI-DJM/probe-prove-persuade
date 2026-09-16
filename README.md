@@ -1,100 +1,98 @@
 # Probe-Prove-Persuade
 
-> **Probe · Prove · Persuade** — 基于 Randy Olson《Houston, We Have a Narrative》的科学文本叙事润色工具
+> **Probe · Prove · Persuade** — a scientific narrative polishing skill based on Randy Olson's *Houston, We Have a Narrative*
+
+[English](README.md) | [中文](README.zh-CN.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Language: EN/ZH](https://img.shields.io/badge/Language-EN%2FZH-blue.svg)](#)
 [![Skill Type: AI Agent](https://img.shields.io/badge/Type-AI%20Agent%20Skill-purple.svg)](#)
 [![Method: WSP Model](https://img.shields.io/badge/Method-WSP%20Model-teal.svg)](#)
 
-将好莱坞叙事技法系统性地应用于科学写作，通过 **WSP 模型**（Word-Sentence-Paragraph）在三个层级重构论文叙事结构，让科研写作从"实验记录簿"变成"引人入胜的故事"。
+Apply Hollywood narrative techniques systematically to scientific writing. Through the **WSP model** (Word-Sentence-Paragraph), restructure paper narratives at three levels — turning scientific writing from a "lab notebook" into "a compelling story".
 
-**名字由来** —— 三个P开头的动词排比，既是科学传播的经典三步，也映射skill的核心工作流：
+**Why this name** — three alliterative P-verbs: a classic trio in science communication, and a faithful map of the skill's core workflow:
 
 ```
-Probe     诊断叙事光谱，发现文本的AAA病灶
+Probe     Diagnose the narrative spectrum, locate the AAA patterns
    │
    ▼
-Prove     用WSP模型工具重构论证逻辑
+Prove     Restructure argument logic with WSP model tools
    │
    ▼
-Persuade  交付让读者信服的润色文本
+Persuade  Deliver polished text that convinces the reader
 ```
 
 ---
 
-## 目录
+## Table of Contents
 
-- [背景与动机](#背景与动机)
-- [核心方法论：WSP 模型](#核心方法论wsp-模型)
-- [三阶段工作流](#三阶段工作流)
-- [安装与使用](#安装与使用)
-- [示例](#示例)
-- [IMRAD 分区指南](#imrad-分区指南)
-- [反模式与常见错误](#反模式与常见错误)
-- [文件结构](#文件结构)
-- [致谢与引用](#致谢与引用)
-- [许可协议](#许可协议)
+- [Background & Motivation](#background--motivation)
+- [Core Methodology: The WSP Model](#core-methodology-the-wsp-model)
+- [Three-Stage Workflow](#three-stage-workflow)
+- [Installation & Usage](#installation--usage)
+- [Examples](#examples)
+- [IMRAD Section Guide](#imrad-section-guide)
+- [Anti-Patterns & Common Mistakes](#anti-patterns--common-mistakes)
+- [File Structure](#file-structure)
+- [Acknowledgments & References](#acknowledgments--references)
+- [License](#license)
 
 ---
 
-## 背景与动机
+## Background & Motivation
 
-科学写作的最大问题不是数据不足，而是**叙事结构的缺失**。
+The biggest problem in scientific writing is not a lack of data, but a **lack of narrative structure**.
 
-大多数论文遵循 **AAA 模式**（And-And-And）：事实的平铺罗列，没有张力，没有方向，没有转折。读者无法识别研究空白，无法感受"为什么这项研究重要"。
+Most papers follow the **AAA pattern** (And-And-And): a flat sequence of facts with no tension, no direction, no turning point. Readers cannot identify the research gap, nor feel *why this research matters*.
 
-Randy Olson——一位从海洋生物学终身教授转型为好莱坞电影人的跨界学者——在 *Houston, We Have a Narrative: Why Science Needs Story* 一书中提出：
+Randy Olson — a cross-disciplinary scholar who moved from tenured marine biology professor to Hollywood filmmaker — argues in *Houston, We Have a Narrative: Why Science Needs Story*:
 
-> **科学是一个叙事过程。叙事就是讲故事。因此，科学需要讲故事。**
+> **Science is a narrative process. Narrative is storytelling. Therefore, science needs story.**
 
-本 skill 将书中的核心方法论系统化为可操作的润色工具。
+This skill systematizes the book's core methodology into an actionable polishing tool.
 
-### 理论渊源
+### Intellectual Lineage
 
-| 来源 | 贡献 |
-|------|------|
-| Aristotle（亚里士多德） | 三幕结构：开端—中段—结尾 |
-| Hegel（黑格尔） | 辩证法：正题—反题—合题 |
-| Joseph Campbell | 英雄之旅（单体神话） |
-| Christopher Vogler | 将英雄之旅改编为编剧实用工具 |
+| Source | Contribution |
+|--------|--------------|
+| Aristotle | Three-act structure: beginning—middle—end |
+| Hegel | Dialectics: thesis—antithesis—synthesis |
+| Joseph Campbell | The Hero's Journey (monomyth) |
+| Christopher Vogler | Adaptation of the Hero's Journey as a practical screenwriting tool |
 | Theodosius Dobzhansky | "Nothing in biology makes sense except in the light of evolution" |
-| Randy Olson | ABT 模板形式化、WSP 模型、叙事光谱 |
+| Randy Olson | Formalized ABT template, WSP model, Narrative Spectrum |
 
 ---
 
-## 核心方法论：WSP 模型
+## Core Methodology: The WSP Model
 
-WSP 模型在三个层级运作，每个层级对应一种叙事工具：
+The WSP model operates at three levels; each level corresponds to one narrative tool:
 
 ```
 WSP Model
   │
-  ├── W (Word)        ──►  Dobzhansky Template     ──►  主题锚定
-  │                                                    在词汇/短语层面工作
+  ├── W (Word)        ──►  Dobzhansky Template     ──►  Theme anchoring
+  │                                                       operates at word/phrase level
   │
-  ├── S (Sentence)    ──►  ABT Template             ──►  逻辑重构
-  │                                                    在单句层面工作
+  ├── S (Sentence)    ──►  ABT Template             ──►  Logic restructuring
+  │                                                       operates at sentence level
   │
-  └── P (Paragraph)   ──►  Hero's Journey /         ──►  弧线构建
-                           Story Spine                    在多段落层面工作
+  └── P (Paragraph)   ──►  Hero's Journey /         ──►  Arc construction
+                           Story Spine                    operates at multi-paragraph level
 ```
 
-**核心原则**：三层必须按顺序应用。主题（词层）不清晰时无法修复句子问题；句子缺乏 ABT 结构时无法构建段落弧线。
+**Core principle**: the three layers must be applied in order. You cannot fix a sentence problem when the theme (word layer) is unclear; you cannot build a paragraph arc when sentences lack ABT structure.
 
-### 层级一：Dobzhansky 模板（词层 — 主题锚定）
+### Layer 1: The Dobzhansky Template (Word layer — theme anchoring)
 
 ```
-English:
 "Nothing in [research domain] makes sense except in the light of [key concept]."
-
-Chinese:
-"如果不从 [关键概念] 的角度思考问题，[研究领域] 的一切都毫无道理。"
 ```
 
-**作用**：锁定全文核心主题，减少"无目的的信息堆砌"，确保每一段都服务于锚定主题。
+**Purpose**: lock the core theme of the whole text, reduce aimless information piling, and ensure every paragraph serves the anchored theme.
 
-### 层级二：ABT 模板（句层 — 逻辑重构）
+### Layer 2: The ABT Template (Sentence layer — logic restructuring)
 
 ```
 [Agreement/facts], AND [more context],
@@ -102,184 +100,181 @@ BUT [contradiction/problem/gap],
 THEREFORE [conclusion/action].
 ```
 
-```
-______而且______，但是______，因此______。
-```
+**Three variants** to suit different audiences:
 
-**三种变体**，适配不同受众：
+| Variant | Name | Length | Use cases |
+|---------|------|--------|-----------|
+| cABT | Concise | 1 short sentence | Elevator pitch, public talk, press release |
+| kABT | Keeper | 2–4 sentences | Conference abstract, paper abstract, grant abstract |
+| iABT | In-depth | Full paragraph | Introduction, detailed technical proposal |
 
-| 变体 | 名称 | 长度 | 适用场景 |
-|------|------|------|----------|
-| cABT | Concise（精简版） | 1 个短句 | 电梯演讲、公众演讲、新闻稿 |
-| kABT | Keeper（成品版） | 2-4 句 | 会议摘要、论文摘要、基金摘要 |
-| iABT | In-depth（深度版） | 完整段落 | 引言部分、详细技术提案 |
-
-### 层级三：Story Spine / 英雄之旅（段层 — 弧线构建）
+### Layer 3: Story Spine / Hero's Journey (Paragraph layer — arc construction)
 
 ```
-In an ordinary world, [背景]...
-A flawed protagonist [研究问题]...
-Encountered a catastrophic event [关键挑战/空白]...
-Which upended their world, but after assessment, [认知]...
-The protagonist decided to act, [方法]...
-But with raised stakes, [困难]...
-The protagonist had to learn a lesson, [发现]...
-To confront the antagonist, [验证]...
-And achieve the goal, [贡献]...
+In an ordinary world, [background]...
+A flawed protagonist [research problem]...
+Encountered a catastrophic event [key challenge/gap]...
+Which upended their world, but after assessment, [insight]...
+The protagonist decided to act, [method]...
+But with raised stakes, [difficulty]...
+The protagonist had to learn a lesson, [finding]...
+To confront the antagonist, [validation]...
+And achieve the goal, [contribution]...
 ```
 
-**高低原则**（Christopher Keane）：好故事只保留最高潮和最低谷，删掉中间无用的过渡。
+**The high-low principle** (Christopher Keane): good stories keep only the highest peak and the lowest valley — cut the useless transitions in between.
 
 ---
 
-## 三阶段工作流
+## Three-Stage Workflow
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    输入：待润色文本                        │
+│                    Input: text to polish                  │
 └─────────────────────────┬───────────────────────────────┘
                           ▼
 ┌─────────────────────────────────────────────────────────┐
-│  PROBE: 诊断 — 叙事光谱评估                               │
-│  逐段标记 AAA / ABT / 混合，定位需要重构的段落             │
-│  填写 Dobzhansky 模板，锚定全文核心主题                    │
+│  PROBE: Diagnose — Narrative Spectrum assessment        │
+│  Mark each paragraph AAA / ABT / mixed                  │
+│  Fill in the Dobzhansky template to anchor the theme    │
 └─────────────────────────┬───────────────────────────────┘
                           ▼
 ┌─────────────────────────────────────────────────────────┐
-│  PROVE: 论证 — WSP 模型重构                               │
-│  词层：Dobzhansky 模板检查主题一致性                       │
-│  句层：ABT 模板重构关键句子的逻辑骨架                      │
-│  段层：Story Spine 构建多段落叙事弧线                     │
+│  PROVE: Argue — WSP model restructuring                 │
+│  Word layer:      Dobzhansky template checks theme      │
+│  Sentence layer:  ABT template rebuilds sentence logic  │
+│  Paragraph layer: Story Spine builds a narrative arc    │
 └─────────────────────────┬───────────────────────────────┘
                           ▼
 ┌─────────────────────────────────────────────────────────┐
-│  PERSUADE: 说服 — 验证与交付                              │
-│  朗读测试、电梯测试、"But"真实性检查                      │
-│  输出润色后文本 + 诊断报告 + 修改日志                     │
+│  PERSUADE: Convince — verification & delivery           │
+│  Read-aloud test, elevator test, "But" truth check      │
+│  Output polished text + diagnosis report + change log   │
 └─────────────────────────┬───────────────────────────────┘
                           ▼
 ┌─────────────────────────────────────────────────────────┐
-│                    输出：润色后文本                        │
+│                  Output: polished text                   │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 安装与使用
+## Installation & Usage
 
-### 作为 AI Agent Skill 使用
+### As an AI Agent Skill
 
-将本仓库的 `SKILL.md`、`REFERENCE.md`、`EXAMPLES.md` 复制到你的 AI Agent 技能目录中。以 DuMate / OpenCode 类 agent 为例：
+Copy `SKILL.md`, `REFERENCE.md`, and `EXAMPLES.md` from this repository into your AI agent's skill directory. For a DuMate / OpenCode-style agent:
 
 ```bash
-# 复制到技能安装目录
 cp SKILL.md REFERENCE.md EXAMPLES.md /path/to/skills/user/probe-prove-persuade/
 ```
 
-安装后，在对话中直接描述润色需求即可触发：
+After installation, describe your polishing need in conversation to trigger the skill:
 
 ```
-User: 帮我润色这段摘要
-User: 检查这段引言的叙事结构
-User: 用ABT模板重构这段讨论
-User: 这段文字是不是AAA结构
-User: 帮我写一个cABT电梯演讲
-User: 用杜布赞斯基模板锚定论文主题
+User: Polish this abstract for me
+User: Check the narrative structure of this introduction
+User: Restructure this discussion with the ABT template
+User: Is this paragraph AAA-structured?
+User: Write a cABT elevator pitch for me
+User: Anchor the paper's theme with the Dobzhansky template
 ```
 
-### 作为独立参考文档使用
+### As Standalone Reference Documents
 
-即使不使用 AI Agent，这三个文件本身就是完整的叙事写作方法论手册：
+Even without an AI agent, these files constitute a complete manual of narrative-writing methodology:
 
-| 文件 | 内容 | 用途 |
-|------|------|------|
-| [SKILL.md](SKILL.md) | 主指令：三阶段工作流 + WSP 概览 | 快速查阅工作流 |
-| [REFERENCE.md](REFERENCE.md) | 方法论详解：全书 11 章理论体系 | 深入理解理论背景 |
-| [EXAMPLES.md](EXAMPLES.md) | 8 个完整润色前后对比 + 速查表 | 实践参考 |
+| File | Content | Purpose |
+|------|---------|---------|
+| [SKILL.md](SKILL.md) | Main instruction: three-stage workflow + WSP overview | Quick workflow lookup |
+| [REFERENCE.md](REFERENCE.md) | Methodology in depth: the book's 11-chapter theoretical system | Deep theoretical background |
+| [EXAMPLES.md](EXAMPLES.md) | 8 before/after polishing comparisons + quick reference | Hands-on practice |
 
 ---
 
-## 示例
+## Examples
 
-### 润色前（AAA — 平铺直叙）
+### Before polishing (AAA — flat statement)
 
 > We study multi-energy systems. We model electricity, heat, and gas networks. We use reinforcement learning. We train agents with PPO. We evaluate on benchmark datasets. We compare with baseline methods. We achieve 15% cost reduction. We conclude that our method is effective.
 
-**诊断**：AAA 重度。无研究空白，无张力，无"But"。读者无法判断这项工作为什么重要。
+**Diagnosis**: severe AAA. No research gap, no tension, no "But". Readers cannot tell why this work matters.
 
-### 润色后（ABT — 有张有合）
+### After polishing (ABT — tension and resolution)
 
 > Multi-energy systems integrate electricity, heat, and gas networks, **AND** reinforcement learning has shown promise for their coordinated optimization. **BUT** existing approaches assume homogeneous agent capabilities, failing to capture the structural heterogeneity of real-world energy components. **THEREFORE**, we propose a heterogeneous graph reinforcement learning framework that explicitly models component diversity, achieving 15% cost reduction over state-of-the-art baselines.
 
-> 更多示例见 [EXAMPLES.md](EXAMPLES.md)。
+> More examples: see [EXAMPLES.md](EXAMPLES.md).
 
 ---
 
-## IMRAD 分区指南
+## IMRAD Section Guide
 
-| IMRAD 部分 | 叙事工具 | 目标 |
-|------------|----------|------|
-| **I**ntroduction | ABT + Story Spine + Dobzhansky | 建立空白，制造张力，激发研究动机 |
-| **M**ethods | 最少叙事；聚焦清晰度 | 准确、可复现的描述 |
-| **R**esults | 最少叙事；聚焦清晰度 | 呈现发现，不加粉饰 |
-| **A**nd **D**iscussion | ABT + Dobzhansky | 解读发现，回扣主题 |
-
----
-
-## 反模式与常见错误
-
-| 反模式 | 症状 | 修复 |
-|--------|------|------|
-| **AAA 罗列** | "We did A. We did B. We did C. We found D." | 找到"But"——什么是意外的？什么空白存在？ |
-| **虚假 ABT** | 制造数据中不存在的冲突 | 如无真实"But"，研究可能是描述性的——不要强行套叙事弧 |
-| **过度戏剧化** | 把方法部分写成惊悚片 | Methods/Results 保持事实性，叙事工具只用于 I 和 D |
-| **主题漂移** | 每段讨论不同话题，无统一线索 | 重新应用 Dobzhansky 模板，每段必须服务锚定主题 |
-| **忽视受众** | 对公众演讲和专家论文使用相同 ABT 密度 | 根据受众选择 cABT / kABT / iABT |
+| IMRAD Section | Narrative Tool | Goal |
+|---------------|----------------|------|
+| **I**ntroduction | ABT + Story Spine + Dobzhansky | Establish the gap, build tension, motivate the research |
+| **M**ethods | Minimal narrative; focus on clarity | Accurate, reproducible description |
+| **R**esults | Minimal narrative; focus on clarity | Present findings without embellishment |
+| **A**nd **D**iscussion | ABT + Dobzhansky | Interpret findings, tie back to the theme |
 
 ---
 
-## 文件结构
+## Anti-Patterns & Common Mistakes
+
+| Anti-pattern | Symptom | Fix |
+|--------------|---------|-----|
+| **AAA listing** | "We did A. We did B. We did C. We found D." | Find the "But" — what is surprising? What gap exists? |
+| **Fake ABT** | Fabricating a conflict that does not exist in the data | If there is no real "But", the research may be descriptive — do not force a narrative arc |
+| **Over-dramatizing** | Writing the Methods section like a thriller | Keep Methods/Results factual; use narrative tools only for I and D |
+| **Theme drift** | Every paragraph discusses a different topic with no unifying thread | Reapply the Dobzhansky template; every paragraph must serve the anchored theme |
+| **Ignoring the audience** | Using the same ABT density for public talks and expert papers | Choose cABT / kABT / iABT according to the audience |
+
+---
+
+## File Structure
 
 ```
 probe-prove-persuade/
-├── README.md              # 本文件 — 项目主页
-├── LICENSE                # MIT 许可协议
-├── .gitignore             # Git 忽略规则
-├── CONTRIBUTING.md        # 贡献指南
-├── SKILL.md               # 主指令：三阶段工作流 + WSP 概览
-├── REFERENCE.md           # 方法论详解：全书 11 章理论体系
-└── EXAMPLES.md            # 8 个润色前后对比 + 速查表
+├── README.md              # This file — project homepage (English)
+├── README.zh-CN.md        # 中文项目主页 (Chinese version)
+├── LICENSE                # MIT license
+├── .gitignore             # Git ignore rules
+├── CONTRIBUTING.md        # Contribution guide (English)
+├── CONTRIBUTING.zh-CN.md  # 中文贡献指南 (Chinese version)
+├── SKILL.md               # Main instruction: three-stage workflow + WSP overview
+├── REFERENCE.md           # Methodology in depth: the book's 11-chapter theoretical system
+└── EXAMPLES.md            # 8 before/after polishing comparisons + quick reference
 ```
 
 ---
 
-## 致谢与引用
+## Acknowledgments & References
 
-### 原著
+### Original book
 
 ```
 Olson, Randy. Houston, We Have a Narrative: Why Science Needs Story.
 Chicago: University of Chicago Press, 2015. ISBN: 978-0-226-27098-6
 ```
 
-### 中文译本
+### Chinese translation
 
 ```
 兰迪·奥尔森. 科学需要讲故事. 高爽 译. 重庆: 重庆大学出版社, 2018.
 ISBN: 978-7-5689-0920-4
 ```
 
-### 核心理论来源
+### Core theoretical sources
 
-- **Dobzhansky 模板**：源自 Theodosius Dobzhansky 1973 年经典论文标题
-- **ABT 模板**：Olson 于 2011 年形式化，根源可追溯至亚里士多德三幕结构和黑格尔辩证法
-- **Story Spine**：由 Dolly Barton（Olson 工作坊合作者）开发
-- **英雄之旅**：Joseph Campbell《千面英雄》(1949)，Christopher Vogler 改编为编剧工具
+- **Dobzhansky template**: from the title of Theodosius Dobzhansky's classic 1973 paper
+- **ABT template**: formalized by Olson in 2011; roots trace back to Aristotle's three-act structure and Hegel's dialectics
+- **Story Spine**: developed by Dolly Barton (a collaborator of Olson's workshops)
+- **Hero's Journey**: Joseph Campbell, *The Hero with a Thousand Faces* (1949), adapted as a screenwriting tool by Christopher Vogler
 
 ---
 
-## 许可协议
+## License
 
-本项目基于 [MIT License](LICENSE) 开源。
+This project is open-sourced under the [MIT License](LICENSE).
 
-书中方法论内容版权归 Randy Olson 及 respective publishers 所有。本项目是对书中方法的二次提炼和工具化实现，仅供学习和研究使用。
+The methodology in the book is copyrighted by Randy Olson and the respective publishers. This project is a secondary distillation and tool-ization of the book's methods, provided for learning and research purposes only.

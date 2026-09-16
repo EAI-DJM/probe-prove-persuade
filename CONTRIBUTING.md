@@ -1,43 +1,43 @@
-# 贡献指南
+# Contributing to Probe-Prove-Persuade
 
-感谢你对 Probe-Prove-Persuade 的关注！欢迎通过以下方式参与贡献。
+Thank you for your interest in Probe-Prove-Persuade! Contributions of all kinds are welcome.
 
-## 如何贡献
+## How to Contribute
 
-### 报告问题
+### Reporting Issues
 
-如果你在使用过程中发现方法论描述不准确、示例不够典型、或有任何改进建议，请[提交 Issue](../../issues/new)，并注明：
+If you find inaccurate methodology descriptions, unrepresentative examples, or have any improvement suggestions, please [open an issue](../../issues/new) and include:
 
-- 具体涉及哪个文件和章节
-- 问题描述
-- 期望的改进方向
+- The specific file and section involved
+- A description of the problem
+- The expected improvement direction
 
-### 提交改进
+### Submitting Improvements
 
-1. Fork 本仓库
-2. 创建分支：`git checkout -b feature/your-improvement`
-3. 修改文件
-4. 提交：`git commit -m "描述你的改进"`
-5. 推送：`git push origin feature/your-improvement`
-6. 提交 Pull Request
+1. Fork this repository
+2. Create a branch: `git checkout -b feature/your-improvement`
+3. Make your changes
+4. Commit: `git commit -m "describe your improvement"`
+5. Push: `git push origin feature/your-improvement`
+6. Open a Pull Request
 
-### 贡献方向
+### Contribution Directions
 
-欢迎以下类型的贡献：
+The following types of contributions are welcome:
 
-- **新增示例**：来自不同学科领域的润色前后对比
-- **多语言支持**：添加非中英文的 ABT 句式模板
-- **方法论补充**：引用书中尚未覆盖的章节内容
-- **LaTeX 实践**：更多 LaTeX 论文中的实际应用案例
-- **其他叙事框架**：与 WSP 模型互补的叙事工具
+- **New examples**: before/after polishing comparisons from different disciplines
+- **Multilingual support**: ABT sentence-pattern templates beyond English and Chinese
+- **Methodology additions**: content from the book's chapters not yet covered
+- **LaTeX practice**: more real-world use cases in LaTeX papers
+- **Other narrative frameworks**: narrative tools complementary to the WSP model
 
-### 编辑规范
+### Editing Guidelines
 
-- Markdown 文件使用 LF 行尾
-- 中英文之间保留一个空格
-- 代码块标注语言类型
-- 表格不超过 4 列（复杂信息拆分为多个表格）
+- Markdown files use LF line endings
+- Keep one space between Chinese and English text (in Chinese documents)
+- Annotate the language of code blocks
+- Tables should not exceed 4 columns (split complex information into multiple tables)
 
-## 致谢
+## Acknowledgments
 
-所有贡献者将在 README 中列出感谢。
+All contributors will be listed in the README.
